@@ -1,51 +1,37 @@
-// Main color
-$main-bg-color: "#FFFFFF";
+:root {
+  // Main color
+  --main-bg-color: #FFFFFF;
+  // Content color
+  --main-content-bg-color: #F9F8F7;
+  // Text color
+  --main-text-color: #0F1826;
+  // More icon color
+  --more-icon-color: #F9F8F7;
+  // Video play text color
+  --video-text-color: #FFFFFF;
 
+  --video-back-color: #021923;
+  // Footer text color
+  --footer-text-color: #FFFFFF;
+  // Mode bg color
+  --mode-bg-color: #F5F5F5;
 
-// Content color
-$main-content-bg-color: "#F9F8F7";
-// $main-content-bg-color: "#09111B";
-
-// Text color
-$main-text-color: "##FFFFFF";
-// $main-text-color: "#0F1826";
-
-// More icon color
-$more-icon-color: "#F9F8F7";
-// $more-icon-color: "#13E0B2E5";
-
-// Video play text color
-$video-text-color: "#FFFFFF";
-// $video-text-color: "#000000";
-
-$video-back-color: "#021923";
-// $video-back-color: "#FFFFFF";
-
-// Footer text color
-$footer-text-color: "#FFFFFF";
-// $footer-text-color: "#607987";
+}
 
 .dark {
+  // Main color
+  --main-bg-color: #1E1E1E;
   // Content color
-  // $main-content-bg-color: "#F9F8F7";
-  $main-content-bg-color: "#09111B";
-
+  --main-content-bg-color: #09111B;
   // Text color
-  // $main-text-color: "##FFFFFF";
-  $main-text-color: "#0F1826";
-
+  --main-text-color: #FFFFFF;
   // More icon color
-  // $more-icon-color: "#F9F8F7";
-  $more-icon-color: "#13E0B2E5";
-
+  --more-icon-color: #13E0B2E5;
   // Video play text color
-  // $video-text-color: "#FFFFFF";
-  $video-text-color: "#000000";
-
-  // $video-back-color: "#021923";
-  $video-back-color: "#FFFFFF";
-
+  --video-text-color: #000000;
+  --video-back-color: #FFFFFF;
   // Footer text color
-  // $footer-text-color: "#FFFFFF";
-  $footer-text-color: "#607987";
+  --footer-text-color: #607987;
+  // Mode bg color
+  --mode-bg-color: #272727;
 }

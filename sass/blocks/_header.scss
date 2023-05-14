@@ -1,6 +1,8 @@
 //**************//
 //*** HEADER ***//
 //**************//
+@import '../variables';
+
 .site-header {
   position: fixed;
   z-index: 10;
@@ -9,7 +11,7 @@
   left: 0;
   margin: 0 auto;
   padding: 17px 0;
-  background-color: #F1F0EE;
+  background-color: var(--main-content-bg-color);
 }
 
 .site-header__inner {
@@ -37,7 +39,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  color: #000000;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
@@ -55,7 +57,7 @@
 .mode-btn {
   padding: 15px;
   margin-left: 35px;
-  background-color: #F5F5F5;
+  background-color: var(--mode-bg-color);
   border-radius: 50%;
 }
 
