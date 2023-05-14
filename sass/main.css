@@ -355,6 +355,15 @@ img {
   padding: 0 20px;
 }
 
-.yordam {
+.yordam-boshi .yordam {
   display: flex;
+  background-color: red;
+}
+.yordam-boshi__chap {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ba8d5b;
 }/*# sourceMappingURL=main.css.map */

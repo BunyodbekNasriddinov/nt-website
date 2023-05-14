@@ -1,6 +1,335 @@
-// yordam Yordam kerakmi?
-
-.yordam {
-    display: flex;
-
+* {
+  text-decoration: none;
+  list-style: none;
 }
+// yordam Yordam kerakmi?
+.yordam {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 98px;
+  &__ung {
+    max-width: 512px;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 634px;
+    }
+  }
+  &__chap {
+    max-width: 448px;
+    width: 100%;
+    padding: 0 40px;
+    &--title {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 40px;
+      color: #0f1826;
+      text-align: start;
+    }
+    &--text {
+      max-width: 361px;
+      width: 100%;
+      margin: 0 auto;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #607987;
+      padding-top: 16px;
+      padding-bottom: 32px;
+    }
+    input {
+      width: 100%;
+      display: block;
+      margin-bottom: 16px;
+      background: #ffffff;
+      border: 1px solid #dadada;
+      border-radius: 100px;
+      outline: none;
+      padding: 14px 17px;
+    }
+    label {
+      display: block;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(0, 0, 0, 0.35);
+      padding-bottom: 6px;
+    }
+    &--leni {
+      color: #ba8d5b;
+    }
+  }
+  &__form {
+    &--text1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000000;
+      padding-top: 16px;
+      padding-bottom: 22px;
+    }
+    &--btn {
+      display: block;
+      padding: 13px 0;
+      border: none;
+      background-color: #ba8d5b;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+      max-width: 368px;
+      width: 100%;
+      border-radius: 100px;
+      &:hover {
+        border: 1px solid #ba8d5b;
+        background: #f5f5f5;
+        color: #0f1826;
+      }
+      &:active {
+        background-color: #ba8d5b;
+        color: #ffffff;
+      }
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: #ba8d5b;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+@media screen and (max-width: 768px) {
+  .yordam {
+    &__ung {
+      display: none;
+    }
+  }
+}
+// Footer bulim
+.footer-bg {
+  background-color: #f9f8f7;
+  padding-top: 26px;
+  padding-bottom: 50px;
+}
+.footer {
+  list-style: none;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    &--item {
+      padding: 0;
+      margin: 0;
+    }
+    &--text {
+      max-width: 239px;
+      width: 100%;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: #607987;
+    }
+  }
+
+  &__list1 {
+    &--item {
+      list-style: none;
+    }
+    &--item a {
+      text-decoration: none;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 32px;
+      color: #607987;
+    }
+
+    &--one {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #0f1826;
+      padding-bottom: 34px;
+      padding-top: 5px;
+    }
+  }
+  &__link {
+    padding-bottom: 22px;
+  }
+  &__hr {
+    max-width: 827px;
+    width: 100%;
+    border: 1px solid #d5d1c9;
+    transform: rotate(0.07deg);
+    position: absolute;
+    right: 50px;
+  }
+}
+.select {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+    &__list {
+      display: block;
+      &--text {
+        max-width: 342px;
+        margin: 0 auto;
+        padding-bottom: 42px;
+      }
+    }
+    &__link {
+      display: block;
+    }
+    &__hr {
+      position: static;
+    }
+  }
+  .none {
+    display: none;
+  }
+  .select {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    border: none;
+    outline: none;
+    margin-bottom: 24px;
+    background-color: #f9f8f7;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer {
+    text-align: start;
+    &__list {
+      display: block;
+      &--text {
+        max-width: 342px;
+      }
+    }
+    &__link {
+      display: block;
+    }
+    &__hr {
+      position: static;
+    }
+  }
+}
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 34px;
+  &__text {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #607987;
+  }
+  &__list {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    &--strong {
+      display: block;
+      max-width: 198px;
+      width: 100%;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #0f1826;
+      padding-bottom: 16px;
+    }
+    &--text {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: #607987;
+      max-width: 193px;
+      width: 100%;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #607987;
+  }
+  &__ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    flex-direction: column-reverse;
+  }
+}
+.tex {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .Footer {
+    &__list {
+      flex-direction: column-reverse;
+      &--strong {
+        max-width: 317px;
+      }
+      &--text {
+        max-width: 317px;
+      }
+    }
+    &__inner {
+      display: none;
+    }
+  }
+}
+
