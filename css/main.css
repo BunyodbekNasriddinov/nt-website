@@ -97,7 +97,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -357,12 +358,14 @@ main {
 
 img {
   vertical-align: middle;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .visually-hidden {
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -642,7 +645,8 @@ img {
 
 .advantages__list {
   display: grid;
-  column-gap: 45px;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
   row-gap: 40px;
   grid-template-columns: repeat(2, 1fr);
   margin: 48px 0 0;
