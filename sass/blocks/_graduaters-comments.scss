@@ -1,0 +1,139 @@
+.graduater-comments {
+  margin-top: 88px;
+  margin-bottom: 110px;
+}
+
+.comments-up-title {
+  // Margin
+  margin: 0;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #0f1826;
+}
+
+.comments-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #607987;
+}
+
+// Reviews
+
+.reviews {
+  margin-top: 52px;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  .reviews__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  video {
+    width: 224px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.37) 69.5%,
+      rgba(0, 0, 0, 0.65) 90.34%
+    );
+    border-radius: 22px;
+    border-radius: 22px;
+  }
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+.comment-date {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: -0.24px;
+
+  color: #ffffff;
+}
+
+.comment-occupation {
+  display: block;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+
+  letter-spacing: -0.24px;
+  color: #7cd1ac;
+}
+
+.comment-owner {
+  // Margin
+  margin: 0;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.comment-name {
+  position: absolute;
+  bottom: 30px;
+
+  margin-left: 23px;
+}
+
+.play-video {
+  position: absolute;
+  top: 16px;
+  margin-left: 23px;
+  padding: 10px;
+
+  border-radius: 100px;
+  background: #ffffff;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.pause-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1028px) {
+  .reviews {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .reviews {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
