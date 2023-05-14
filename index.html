@@ -100,14 +100,27 @@
             <button class="advantages__btn">Ko‘proq</button>
           </div>
         </div>
-      </section>
-      <section class=""></section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner"></div>
       </div>
-    </footer>
-    <script src="./js/main.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner"></div>
+    </div>
+  </footer>
+
+  <script>
+    //* Plays video if video is paused
+    const video = document.querySelector('.my-video');
+    video.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  </script>
+
+</body>
+
 </html>
