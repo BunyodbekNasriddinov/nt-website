@@ -1,6 +1,8 @@
 :root {
   --main-bg-color: #FFFFFF;
-  --main-content-bg-color: #F9F8F7;
+  --header-bg-color: #F1F0EE;
+  --hero-text-color: #021923;
+  --main-content-bg-color: #F1F0EE;
   --main-text-color: #0F1826;
   --more-icon-color: #F9F8F7;
   --video-text-color: #FFFFFF;
@@ -11,6 +13,8 @@
 
 .dark {
   --main-bg-color: #1E1E1E;
+  --header-bg-color: #0F1826;
+  --hero-text-color: #FFFFFF;
   --main-content-bg-color: #09111B;
   --main-text-color: #FFFFFF;
   --more-icon-color: #13E0B2E5;
@@ -387,7 +391,9 @@ img {
 
 :root {
   --main-bg-color: #FFFFFF;
-  --main-content-bg-color: #F9F8F7;
+  --header-bg-color: #F1F0EE;
+  --hero-text-color: #021923;
+  --main-content-bg-color: #F1F0EE;
   --main-text-color: #0F1826;
   --more-icon-color: #F9F8F7;
   --video-text-color: #FFFFFF;
@@ -398,6 +404,8 @@ img {
 
 .dark {
   --main-bg-color: #1E1E1E;
+  --header-bg-color: #0F1826;
+  --hero-text-color: #FFFFFF;
   --main-content-bg-color: #09111B;
   --main-text-color: #FFFFFF;
   --more-icon-color: #13E0B2E5;
@@ -500,10 +508,36 @@ img {
     display: inline-block;
   }
 }
+:root {
+  --main-bg-color: #FFFFFF;
+  --header-bg-color: #F1F0EE;
+  --hero-text-color: #021923;
+  --main-content-bg-color: #F1F0EE;
+  --main-text-color: #0F1826;
+  --more-icon-color: #F9F8F7;
+  --video-text-color: #FFFFFF;
+  --video-back-color: #021923;
+  --footer-text-color: #FFFFFF;
+  --mode-bg-color: #F5F5F5;
+}
+
+.dark {
+  --main-bg-color: #1E1E1E;
+  --header-bg-color: #0F1826;
+  --hero-text-color: #FFFFFF;
+  --main-content-bg-color: #09111B;
+  --main-text-color: #FFFFFF;
+  --more-icon-color: #13E0B2E5;
+  --video-text-color: #000000;
+  --video-back-color: #FFFFFF;
+  --footer-text-color: #607987;
+  --mode-bg-color: #272727;
+}
+
 .hero {
   margin-top: 83px;
   padding: 100px 0;
-  background-color: #F1F0EE;
+  background-color: var(--main-content-bg-color);
   background-image: url("../../images/hero-bgi.png"), url("../../images/hero-bgi-shadow.png");
   background-repeat: no-repeat;
   background-position: calc(50% + 150px) bottom, calc(50% + 350px) bottom;
@@ -514,6 +548,7 @@ img {
   padding: 0;
   width: 100%;
   max-width: 160px;
+  color: var(--hero-text-color);
   font-weight: 700;
   font-size: 40px;
   line-height: 56px;
@@ -533,7 +568,7 @@ img {
   display: flex;
   align-items: center;
   letter-spacing: -0.36px;
-  color: #607987;
+  color: var(--hero-text-color);
 }
 
 .hero-btn {
@@ -542,7 +577,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: var(--hero-text-color);
   background-color: #BA8D5B;
   border-radius: 100px;
 }

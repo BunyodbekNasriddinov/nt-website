@@ -1,8 +1,11 @@
 :root {
   // Main color
   --main-bg-color: #FFFFFF;
+  // Header bg color
+  --header-bg-color: #F1F0EE;
+  --hero-text-color: #021923;
   // Content color
-  --main-content-bg-color: #F9F8F7;
+  --main-content-bg-color: #F1F0EE;
   // Text color
   --main-text-color: #0F1826;
   // More icon color
@@ -21,6 +24,9 @@
 .dark {
   // Main color
   --main-bg-color: #1E1E1E;
+  // Header bg color
+  --header-bg-color: #0F1826;
+  --hero-text-color: #FFFFFF;
   // Content color
   --main-content-bg-color: #09111B;
   // Text color
