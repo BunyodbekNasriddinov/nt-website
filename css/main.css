@@ -4,23 +4,22 @@
   --hero-text-color: #021923;
   --main-content-bg-color: #F1F0EE;
   --main-text-color: #0F1826;
-  --more-icon-color: #F9F8F7;
-  --video-text-color: #FFFFFF;
-  --video-back-color: #021923;
-  --footer-text-color: #FFFFFF;
+  --advantages--title: #0F1826;
+  --advantages--text: #607987;
+  --advantages-btn: #0EB182;
   --mode-bg-color: #F5F5F5;
 }
 
 .dark {
-  --main-bg-color: #1E1E1E;
+  --main-bg-color: #09111B;
   --header-bg-color: #0F1826;
   --hero-text-color: #FFFFFF;
   --main-content-bg-color: #09111B;
   --main-text-color: #FFFFFF;
-  --more-icon-color: #13E0B2E5;
-  --video-text-color: #000000;
-  --video-back-color: #FFFFFF;
-  --footer-text-color: #607987;
+  --advantages--title: #FFFFFF;
+  --advantages--text: #FFFFFF;
+  --advantages-btn: #FFFFFF;
+  --footer-text-color: #FFFFFF;
   --mode-bg-color: #272727;
 }
 
@@ -395,23 +394,22 @@ img {
   --hero-text-color: #021923;
   --main-content-bg-color: #F1F0EE;
   --main-text-color: #0F1826;
-  --more-icon-color: #F9F8F7;
-  --video-text-color: #FFFFFF;
-  --video-back-color: #021923;
-  --footer-text-color: #FFFFFF;
+  --advantages--title: #0F1826;
+  --advantages--text: #607987;
+  --advantages-btn: #0EB182;
   --mode-bg-color: #F5F5F5;
 }
 
 .dark {
-  --main-bg-color: #1E1E1E;
+  --main-bg-color: #09111B;
   --header-bg-color: #0F1826;
   --hero-text-color: #FFFFFF;
   --main-content-bg-color: #09111B;
   --main-text-color: #FFFFFF;
-  --more-icon-color: #13E0B2E5;
-  --video-text-color: #000000;
-  --video-back-color: #FFFFFF;
-  --footer-text-color: #607987;
+  --advantages--title: #FFFFFF;
+  --advantages--text: #FFFFFF;
+  --advantages-btn: #FFFFFF;
+  --footer-text-color: #FFFFFF;
   --mode-bg-color: #272727;
 }
 
@@ -514,23 +512,22 @@ img {
   --hero-text-color: #021923;
   --main-content-bg-color: #F1F0EE;
   --main-text-color: #0F1826;
-  --more-icon-color: #F9F8F7;
-  --video-text-color: #FFFFFF;
-  --video-back-color: #021923;
-  --footer-text-color: #FFFFFF;
+  --advantages--title: #0F1826;
+  --advantages--text: #607987;
+  --advantages-btn: #0EB182;
   --mode-bg-color: #F5F5F5;
 }
 
 .dark {
-  --main-bg-color: #1E1E1E;
+  --main-bg-color: #09111B;
   --header-bg-color: #0F1826;
   --hero-text-color: #FFFFFF;
   --main-content-bg-color: #09111B;
   --main-text-color: #FFFFFF;
-  --more-icon-color: #13E0B2E5;
-  --video-text-color: #000000;
-  --video-back-color: #FFFFFF;
-  --footer-text-color: #607987;
+  --advantages--title: #FFFFFF;
+  --advantages--text: #FFFFFF;
+  --advantages-btn: #FFFFFF;
+  --footer-text-color: #FFFFFF;
   --mode-bg-color: #272727;
 }
 
@@ -604,8 +601,34 @@ img {
     line-height: 22px;
   }
 }
+:root {
+  --main-bg-color: #FFFFFF;
+  --header-bg-color: #F1F0EE;
+  --hero-text-color: #021923;
+  --main-content-bg-color: #F1F0EE;
+  --main-text-color: #0F1826;
+  --advantages--title: #0F1826;
+  --advantages--text: #607987;
+  --advantages-btn: #0EB182;
+  --mode-bg-color: #F5F5F5;
+}
+
+.dark {
+  --main-bg-color: #09111B;
+  --header-bg-color: #0F1826;
+  --hero-text-color: #FFFFFF;
+  --main-content-bg-color: #09111B;
+  --main-text-color: #FFFFFF;
+  --advantages--title: #FFFFFF;
+  --advantages--text: #FFFFFF;
+  --advantages-btn: #FFFFFF;
+  --footer-text-color: #FFFFFF;
+  --mode-bg-color: #272727;
+}
+
 .advantages {
   padding: 48px 0;
+  background-color: var(--main-bg-color);
 }
 
 .advantages__title {
@@ -614,7 +637,7 @@ img {
   font-weight: 800;
   font-size: 32px;
   line-height: 40px;
-  color: #0F1826;
+  color: var(--main-text-color);
 }
 
 .advantages__list {
@@ -639,7 +662,7 @@ img {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: -0.4px;
-  color: #0F1826;
+  color: var(--advantages--text);
 }
 
 .advantages__text {
@@ -649,7 +672,7 @@ img {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.28px;
-  color: #607987;
+  color: var(--advantages--text);
 }
 
 .advantages__item-1::before {
@@ -716,7 +739,7 @@ img {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-color: #F9F8F7;
+  background-color: var(--advantages--btn);
   border-radius: 50%;
   background-image: url("../../images/bottom-arrow.svg");
   background-repeat: no-repeat;

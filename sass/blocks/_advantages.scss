@@ -2,8 +2,11 @@
 //***   ADVANTAGES   ***
 //**********************
 
+@import '../variables';
+
 .advantages {
   padding: 48px 0;
+  background-color: var(--main-bg-color);
 }
 
 .advantages__title {
@@ -12,7 +15,7 @@
   font-weight: 800;
   font-size: 32px;
   line-height: 40px;
-  color: #0F1826;
+  color: var(--main-text-color);
 }
 
 .advantages__list {
@@ -37,7 +40,7 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: -0.4px;
-  color: #0F1826;
+  color: var(--advantages--text);
 }
 
 .advantages__text {
@@ -47,7 +50,7 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.28px;
-  color: #607987;
+  color: var(--advantages--text);
 }
 
 .advantages__item-1::before {
@@ -114,7 +117,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-color: #F9F8F7;
+  background-color: var(--advantages--btn);
   border-radius: 50%;
   background-image: url('../../images/bottom-arrow.svg');
   background-repeat: no-repeat;
