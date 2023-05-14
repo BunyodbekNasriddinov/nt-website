@@ -1,27 +1,44 @@
-// Main color
-$main-bg-dark-color: "#1E1E1E";
-$main-bg-light-color: "#FFFFFF";
+:root {
+  // Main color
+  --main-bg-color: #FFFFFF;
+  // Header bg color
+  --header-bg-color: #F1F0EE;
+  --hero-text-color: #021923;
+  // Content color
+  --main-content-bg-color: #F1F0EE;
+  // Text color
+  --main-text-color: #0F1826;
+
+  // Advantages section
+  --advantages--title: #0F1826;
+  --advantages--text: #607987;
+  --advantages-btn: #0EB182;
+  
+
+  // Mode bg color
+  --mode-bg-color: #F5F5F5;
+
+}
+
+.dark {
+  // Main color
+  --main-bg-color: #09111B;
+  // Header bg color
+  --header-bg-color: #0F1826;
+  --hero-text-color: #FFFFFF;
+  // Content color
+  --main-content-bg-color: #09111B;
+  // Text color
+  --main-text-color: #FFFFFF;
+
+  // Advantages section
+  --advantages--title: #FFFFFF;
+  --advantages--text: #FFFFFF;
+  --advantages-btn: #FFFFFF;
 
 
-// Content color
-$main-content-bg-dark-color: "#09111B";
-$main-content-bg-light-color: "#F9F8F7";
 
-// Text color
-$main-text-dark-color: "##FFFFFF";
-$main-text-light-color: "#0F1826";
-
-// More icon color
-$more-icon-dark-color: "#13E0B2E5";
-$more-icon-light-color: "#F9F8F7";
-
-// Video play text color
-$video-text-dark-color: "#FFFFFF";
-$video-text-light-color: "#000000";
-
-$video-back-dark-color: "#021923";
-$video-back-light-color: "#FFFFFF";
-
-// Footer text color
-$footer-text-dark-color: "#FFFFFF";
-$footer-text-dark-color: "#607987";
+  --footer-text-color: #FFFFFF;
+  // Mode bg color
+  --mode-bg-color: #272727;
+}
