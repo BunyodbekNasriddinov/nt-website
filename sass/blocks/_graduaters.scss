@@ -1,0 +1,68 @@
+.graduater {
+  margin: 48px 0;
+}
+
+.graduaters-up-title {
+  // Margin
+  margin: 0;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #0f1826;
+}
+
+.graduaters-up-text {
+  // Margin
+  margin-top: 24px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #607987;
+}
+
+.company-logos ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-gap: 20px;
+
+  margin-top: 48px;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.company-logos img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 16px 12px;
+
+  background: #f9f8f7;
+  border-radius: 8px;
+}
+
+.logos {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.logos:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media screen and (min-width: 1028px) {
+  .company-logos {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
