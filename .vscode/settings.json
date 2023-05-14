@@ -1,0 +1,12 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "glassit.alpha": 200,
+  "liveServer.settings.port": 5501
+}
